@@ -1,27 +1,3 @@
-## React-ts Starter
+## Positivus
 
-#### This is a simple starter for a React project with TypeScript. It includes a basic setup for a React project with TypeScript, ESLint, Prettier, and shadcn/ui.
-
-### Features
-
-- Tailwindcss, shadcn-ui with Typescript
-- PWS configured
-- husky hooks setup for pre-commit
-- docker compose setup
-- eslint, prettier setup for code formatting
-- `serve` command for development server
-- standers folder structure
-
-Don't forget to give a `star` if you like it. ✌️
-
-#### Run Developments Server and check `http://localhost:5173/`
-
-```bash
-npm run dev
-```
-
-#### Run Dockers
-
-```bash
-docker compose up
-```
+Positivus is a modern, professionally designed website for a digital marketing agency that helps businesses navigate the digital landscape to achieve success. It highlights core services such as SEO, PPC advertising, social media marketing, and analytics. The site features a clean layout, engaging visuals, team introductions, case studies, and testimonials to build credibility. With clear calls-to-action and a user-friendly design, it targets businesses seeking reliable digital solutions.
