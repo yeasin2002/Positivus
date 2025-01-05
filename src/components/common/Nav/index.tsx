@@ -19,9 +19,13 @@ export const Nav = ({ className, ...props }: Props) => {
         className="hidden items-center gap-x-4 md:flex"
       >
         <div className="space-x-3">
-          {navData?.map(({ label, link }) => <Link to={link}>{label}</Link>)}
+          {navData?.map(({ label, link }) => (
+            <Link to={link} key={label} className="font-space_grotesk">
+              {label}
+            </Link>
+          ))}
         </div>
-        <Button variant={'secondary'} className="px-7">
+        <Button variant={'secondary'} className="px-7 font-space_grotesk">
           Hire Me
         </Button>
       </div>
