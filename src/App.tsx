@@ -1,11 +1,11 @@
-import { Home, NotFound, RootErrorBoundary } from './page';
-import PWABadge from './pwa/PWABadge';
+import { Home, NotFound, RootErrorBoundary } from './page'
+import PWABadge from './pwa/PWABadge'
 
-import { Route, Routes } from 'react-router';
+import { BrowserRouter, Route, Routes } from 'react-router'
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -15,8 +15,8 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <PWABadge />
-    </>
-  );
-};
+    </BrowserRouter>
+  )
+}
 
-export default App;
+export default App

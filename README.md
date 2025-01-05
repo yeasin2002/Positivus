@@ -6,3 +6,5 @@ Positivus is a modern, professionally designed website for a digital marketing a
  src="./public/Cover.png"
  alt = "cover"
 />
+
+##### Acknowledgement : [Olga Skuja](https://www.olgaskuja.design/)

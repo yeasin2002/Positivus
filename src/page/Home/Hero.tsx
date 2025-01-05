@@ -1,12 +1,9 @@
-import React from 'react';
+import React from 'react'
 interface Props extends React.ComponentProps<'div'> {}
 
-export const Home = ({ ...rest }: Props) => {
+export const Hero = ({ ...rest }: Props) => {
   return (
-    <div
-      className="grid min-h-screen place-items-center bg-gray-900 text-white "
-      {...rest}
-    >
+    <div className="grid min-h-screen place-items-center" {...rest}>
       <h1 className="text-center text-4xl font-bold">
         React TypeScript TailwindCSS Templates with Vite
       </h1>
@@ -14,5 +11,5 @@ export const Home = ({ ...rest }: Props) => {
         Md Kawsar Islam Yeasin (@yeasin2002)
       </p>
     </div>
-  );
-};
+  )
+}
