@@ -1,2 +1,3 @@
 /// <reference types="vite-plugin-pwa/client" />
-declare module 'eslint-plugin-react-hooks';
+/// <reference types="vite-plugin-svgr/client" />
+declare module 'eslint-plugin-react-hooks'
