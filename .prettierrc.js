@@ -1,5 +1,6 @@
 export default {
   plugins: ['prettier-plugin-tailwindcss'],
+  tailwindConfig: './tailwind.config.js',
   semi: false,
   trailingComma: 'all',
   singleQuote: true,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 interface Props extends React.ComponentProps<'div'> {}
 
 export const RootErrorBoundary = ({ ...rest }: Props) => {
@@ -9,5 +9,5 @@ export const RootErrorBoundary = ({ ...rest }: Props) => {
         An error occurred. Please try again later.
       </p>
     </div>
-  );
-};
+  )
+}
