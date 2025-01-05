@@ -31,3 +31,6 @@ pnpm-lock.yaml
 bun.lockb
 yarn.lock
 package-lock.json
+
+dev-dist
+dev-dist/*
