@@ -1,16 +1,19 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Home, NotFound, RootErrorBoundary } from './page';
-import PWABadge from './PWABadge';
+import PWABadge from './pwa/PWABadge';
 
-const router = createBrowserRouter([
-  { path: '/', Component: Home, errorElement: <RootErrorBoundary /> },
-  { path: '*', Component: NotFound },
-]);
+import { Route, Routes } from 'react-router';
 
 const App = () => {
   return (
     <>
-      <RouterProvider router={router} />
+      <Routes>
+        <Route
+          path="/"
+          element={<Home />}
+          errorElement={<RootErrorBoundary />}
+        />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <PWABadge />
     </>
   );
