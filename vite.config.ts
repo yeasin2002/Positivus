@@ -6,6 +6,7 @@ import react from '@vitejs/plugin-react-swc'
 import Fonts from 'unplugin-fonts/vite'
 import svgr from 'vite-plugin-svgr'
 import { visualizer } from 'rollup-plugin-visualizer'
+import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 
 const fonts = [
   {
@@ -17,6 +18,7 @@ const fonts = [
 export default defineConfig({
   plugins: [
     react(),
+    TanStackRouterVite(),
     svgr(),
     visualizer({
       filename: './dev-dist/stats.html',

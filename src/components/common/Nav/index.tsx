@@ -2,7 +2,7 @@ import Logo from '@/assets/common/logo-dark.svg?react'
 import { Button } from '@/components/ui'
 import { cn } from '@/utils'
 import React from 'react'
-import { Link } from 'react-router'
+import { Link } from '@tanstack/react-router'
 import { MobileNav } from './MobileNav'
 import { navData } from './nav.data'
 interface Props extends React.ComponentProps<'nav'> {}
