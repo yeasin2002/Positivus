@@ -1,5 +1,4 @@
 import { Home, NotFound, RootErrorBoundary } from './page'
-import PWABadge from './pwa/PWABadge'
 
 import { BrowserRouter, Route, Routes } from 'react-router'
 
@@ -14,7 +13,6 @@ const App = () => {
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <PWABadge />
     </BrowserRouter>
   )
 }

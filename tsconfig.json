@@ -24,7 +24,7 @@
     },
     "types": ["vite-plugin-pwa/info.d.ts", "vite-plugin-pwa/client.d.ts"]
   },
-  "include": ["src", "global.d.ts", "configs"],
+  "include": ["src", "global.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
