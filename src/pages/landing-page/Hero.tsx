@@ -1,18 +1,17 @@
-import React from "react";
 import HeroImg from "@/assets/Illustration/Illustration.svg?react";
 
-import { Button } from "../ui";
+import { Button } from "@/components/ui";
 
-interface Props extends React.ComponentProps<"div"> {}
+interface Props extends React.ComponentProps<"main"> {}
 
 export const Hero = ({ ...rest }: Props) => {
   return (
-    <div
-      className="grid grid-cols-1 items-center justify-between font-space_grotesk md:grid-cols-2"
+    <main
+      className="grid grid-cols-1 items-center justify-between font-space_grotesk md:grid-cols-2 h-full"
       {...rest}
     >
       <div>
-        <h1 className="text-3xl font-medium md:text-6xl">
+        <h1 className="text-3xl font-medium md:text-6xl lea leading-tight ">
           Navigating the <br className="hidden md:block" /> digital landscape
           <br className="hidden md:block" /> for success
         </h1>
@@ -27,6 +26,6 @@ export const Hero = ({ ...rest }: Props) => {
       <div className="flex items-center justify-center">
         <HeroImg className="w-full" />
       </div>
-    </div>
+    </main>
   );
 };

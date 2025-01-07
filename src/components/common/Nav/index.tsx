@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "@/assets/common/logo-dark.svg?react";
 import { cn } from "@/utils";
+import { Link } from "@tanstack/react-router";
 
 import { LargeDeviceNav } from "./LargeDeviceNav";
 import { MobileNav } from "./MobileNav";
@@ -13,7 +14,9 @@ export const Nav = ({ className, ...props }: Props) => {
       {...props}
       className={cn("flex items-center justify-between py-10", className)}
     >
-      <Logo className="w-44 md:w-52" />
+      <Link to="/">
+        <Logo className="w-44 md:w-52" />
+      </Link>
       <LargeDeviceNav className="hidden md:flex" />
       <MobileNav className="md:hidden" />
     </nav>
