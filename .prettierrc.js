@@ -1,28 +1,10 @@
 export default {
-  printWidth: 120,
-  tabWidth: 2,
+  plugins: ["prettier-plugin-tailwindcss"],
+  tailwindConfig: "./tailwind.config.js",
   semi: true,
-  singleQuote: false,
   trailingComma: "all",
-  bracketSpacing: true,
-  arrowParens: "always",
-  proseWrap: "preserve",
-  htmlWhitespaceSensitivity: "css",
-  endOfLine: "lf",
-  embeddedLanguageFormatting: "auto",
-  overrides: [
-    {
-      files: "*.json",
-      options: {
-        printWidth: 80,
-      },
-    },
-    {
-      files: "*.md",
-      options: {
-        printWidth: 80,
-        proseWrap: "never",
-      },
-    },
-  ],
+  singleQuote: false,
+  printWidth: 80,
+  tabWidth: 2,
+  organizeImportsSkipDestructiveCodeActions: true,
 };
