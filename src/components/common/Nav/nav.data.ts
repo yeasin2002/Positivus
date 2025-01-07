@@ -1,22 +1,22 @@
 export const navData = [
   {
     label: 'About Us',
-    link: '',
+    link: 'about-us',
   },
   {
     label: 'Service',
-    link: '',
+    link: 'service',
   },
   {
     label: 'Use Cases',
-    link: '',
+    link: 'use-cases',
   },
   {
     label: 'Pricing',
-    link: '',
+    link: 'pricing',
   },
   {
     label: 'Blog',
-    link: '',
+    link: 'blog',
   },
 ]
