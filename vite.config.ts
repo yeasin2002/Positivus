@@ -1,5 +1,6 @@
 import path from 'path'
 import { defineConfig } from 'vite'
+import { fonts } from './configs'
 
 // vite plugins
 import react from '@vitejs/plugin-react-swc'
@@ -8,15 +9,6 @@ import svgr from 'vite-plugin-svgr'
 import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 import { compression } from 'vite-plugin-compression2'
 import Inspect from 'vite-plugin-inspect'
-
-// import { visualizer } from 'rollup-plugin-visualizer'
-
-const fonts = [
-  {
-    name: 'Space Grotesk',
-    styles: 'wght@300;400;500;700',
-  },
-]
 
 export default defineConfig({
   plugins: [
