@@ -1,9 +1,10 @@
+import { Button } from "@/components/ui";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/utils";
+import { Link } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
 import React from "react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navData } from "./nav.data";
-import { Link } from "@tanstack/react-router";
 
 interface Props extends React.ComponentProps<"div"> {}
 
@@ -12,16 +13,26 @@ export const MobileNav = ({ className, ...props }: Props) => {
     <div id="mobile-device-nav" className={cn(className)} {...props}>
       <Sheet>
         <SheetTrigger>
-          <Menu />
+          <Menu className="size-6" />
         </SheetTrigger>
         <SheetContent>
-          <div className="mt-3 flex flex-col">
+          <div className="mt-3 flex flex-col gap-y-1">
             {navData.map(({ label, link }) => (
-              <Link to={link} key={label + link}>
+              <Link
+                to={link}
+                key={label + link}
+                className="font-space_grotesk text-lg"
+              >
                 {label}
               </Link>
             ))}
           </div>
+          <Button
+            variant={"secondary"}
+            className="mt-4 px-7 font-space_grotesk"
+          >
+            Request a quote
+          </Button>
         </SheetContent>
       </Sheet>
     </div>

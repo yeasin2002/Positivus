@@ -1,5 +1,5 @@
 export default {
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: ["prettier-plugin-tailwindcss", "prettier-plugin-organize-imports"],
   tailwindConfig: "./tailwind.config.js",
   semi: true,
   trailingComma: "all",
