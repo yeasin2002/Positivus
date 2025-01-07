@@ -7,7 +7,7 @@ interface Props extends React.ComponentProps<"main"> {}
 export const Hero = ({ ...rest }: Props) => {
   return (
     <main
-      className="grid grid-cols-1 items-center justify-between font-space_grotesk md:grid-cols-2 h-full"
+      className="grid grid-cols-1 items-center justify-between font-space_grotesk md:grid-cols-2 h-full md:my-4"
       {...rest}
     >
       <div>
