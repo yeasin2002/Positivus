@@ -1,9 +1,9 @@
-import { createLazyFileRoute } from '@tanstack/react-router'
+import { createLazyFileRoute } from "@tanstack/react-router";
 
-export const Route = createLazyFileRoute('/use-cases/')({
+export const Route = createLazyFileRoute("/use-cases/")({
   component: RouteComponent,
-})
+});
 
 function RouteComponent() {
-  return <div>Hello "/use-cases/"!</div>
+  return <div>Hello "/use-cases/"!</div>;
 }
