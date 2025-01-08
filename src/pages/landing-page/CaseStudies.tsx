@@ -36,7 +36,7 @@ export const CaseStudies = ({ ...props }: Props) => {
             <div
               key={label}
               className={cn(
-                "space-y-2",
+                "flex flex-col justify-between",
                 { "pl-8": index === 2 },
                 { "pr-4": index === 0 },
                 {
