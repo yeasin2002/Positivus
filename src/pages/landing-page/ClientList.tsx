@@ -18,7 +18,7 @@ const CompanyCard = ({ data }: CardProps) => {
 
 export const ClientList = ({ ...props }: Props) => {
   return (
-    <div {...props}>
+    <div {...props} className="my-8">
       <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden  ">
         <Marquee pauseOnHover className="[--duration:50s]">
           {clientListData.map((company) => (

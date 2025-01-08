@@ -72,12 +72,15 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-main-black;
   }
 }
 
 @layer components {
   #root {
     @apply container;
+  }
+  .section-header {
+    @apply rounded-lg bg-main-green px-2 text-4xl font-bold text-main-black;
   }
 }

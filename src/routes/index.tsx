@@ -1,4 +1,4 @@
-import { ClientList, Hero } from "@/pages/landing-page";
+import { ClientList, Hero, Service } from "@/pages/landing-page";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -10,6 +10,7 @@ function HomeComponent() {
     <>
       <Hero />
       <ClientList />
+      <Service />
     </>
   );
 }
