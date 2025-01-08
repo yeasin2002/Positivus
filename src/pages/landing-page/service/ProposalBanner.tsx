@@ -7,7 +7,7 @@ export const ProposalBanner = ({ ...props }: Props) => {
   return (
     <div
       {...props}
-      className="bg-main-gray grid grid-cols-1 md:grid-cols-2 py-10 md:py-0 px-10 my-16 rounded-3xl items-center  max-h-80 font-space_grotesk"
+      className="bg-main-gray grid grid-cols-1 md:grid-cols-2 py-10 md:py-0 px-10 my-16 rounded-3xl items-center  max-h-80 "
     >
       <div>
         <h4 className="text-xl font-medium"> Let's make things happen</h4>

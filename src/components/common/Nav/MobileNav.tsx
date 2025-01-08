@@ -20,19 +20,12 @@ export const MobileNav = ({ className, ...props }: Props) => {
         <SheetContent>
           <div className="mt-3 flex flex-col gap-y-1">
             {navData.map(({ label, link }) => (
-              <Link
-                to={link}
-                key={label + link}
-                className="font-space_grotesk text-lg"
-              >
+              <Link to={link} key={label + link} className=" text-lg">
                 {label}
               </Link>
             ))}
           </div>
-          <Button
-            variant={"secondary"}
-            className="mt-4 px-7 font-space_grotesk"
-          >
+          <Button variant={"secondary"} className="mt-4 px-7 ">
             Request a quote
           </Button>
         </SheetContent>
