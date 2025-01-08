@@ -2,12 +2,14 @@ import { cn } from "@/utils";
 
 interface Props extends React.ComponentProps<"div"> {
   heading: string;
-  description: string;
+  description1: string;
+  description2: string;
 }
 
 export const SectionsHeader = ({
   heading,
-  description,
+  description1,
+  description2,
   className,
   ...props
 }: Props) => {
@@ -20,7 +22,11 @@ export const SectionsHeader = ({
       {...props}
     >
       <h3 className="section-header"> {heading} </h3>
-      <p className="text-sm md:w-[50%]   ">{description}</p>
+      <p className="text-sm ">
+        {description1}
+        <br />
+        {description2}
+      </p>
     </div>
   );
 };

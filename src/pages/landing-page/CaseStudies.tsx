@@ -26,7 +26,8 @@ export const CaseStudies = ({ ...props }: Props) => {
     <div {...props}>
       <SectionsHeader
         heading="Case Studies"
-        description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+        description1="Explore Real-Life Examples of Our Proven Digital Marketing "
+        description2="Success through Our Case Studies"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-3  justify-center  bg-main-dark text-main-gray rounded-3xl p-8">

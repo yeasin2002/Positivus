@@ -1,4 +1,10 @@
-import { CaseStudies, ClientList, Hero, Service } from "@/pages/landing-page";
+import {
+  CaseStudies,
+  ClientList,
+  Hero,
+  Service,
+  WorkingProcess,
+} from "@/pages/landing-page";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -12,6 +18,7 @@ function HomeComponent() {
       <ClientList />
       <Service />
       <CaseStudies />
+      <WorkingProcess />
     </div>
   );
 }

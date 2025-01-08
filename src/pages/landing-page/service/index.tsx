@@ -13,8 +13,8 @@ export const Service = ({ ...props }: Props) => {
     <div {...props}>
       <SectionsHeader
         heading="Services"
-        description="At our digital marketing agency, we offer a range of services to help
-          businesses grow and succeed online. These services include:"
+        description1="At our digital marketing agency, we offer a range of services to"
+        description2="help businesses navigate the digital landscape and achieve success:"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
