@@ -7,3 +7,4 @@ export * from "./CaseStudies";
 export * from "./Working-Process";
 export * from "./team";
 export * from "./testimonials";
+export * from "./contact-us";

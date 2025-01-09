@@ -1,6 +1,7 @@
 import {
   CaseStudies,
   ClientList,
+  ContactUs,
   Hero,
   Service,
   Team,
@@ -23,6 +24,7 @@ function HomeComponent() {
       <WorkingProcess />
       <Team />
       <Testimonials />
+      <ContactUs />
     </div>
   );
 }
