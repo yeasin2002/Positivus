@@ -3,6 +3,7 @@ import {
   ClientList,
   Hero,
   Service,
+  Team,
   WorkingProcess,
 } from "@/pages/landing-page";
 import { createFileRoute } from "@tanstack/react-router";
@@ -19,6 +20,7 @@ function HomeComponent() {
       <Service />
       <CaseStudies />
       <WorkingProcess />
+      <Team />
     </div>
   );
 }
