@@ -4,6 +4,7 @@ import {
   Hero,
   Service,
   Team,
+  Testimonials,
   WorkingProcess,
 } from "@/pages/landing-page";
 import { createFileRoute } from "@tanstack/react-router";
@@ -21,6 +22,7 @@ function HomeComponent() {
       <CaseStudies />
       <WorkingProcess />
       <Team />
+      <Testimonials />
     </div>
   );
 }
