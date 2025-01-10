@@ -4,7 +4,7 @@ interface Props extends React.ComponentProps<"div"> {}
 
 export const FooterContact = ({ ...props }: Props) => {
   return (
-    <div {...props} className="grid grid-cols-1 md:grid-cols-2 my-8 ">
+    <div {...props} className="grid grid-cols-1 lg:grid-cols-2 my-8 ">
       <div className="text-center md:text-start space-y-3 my-8">
         <h6 className="rounded-lg bg-main-green px-2 text-xl font-bold text-main-black inline">
           Contact Us

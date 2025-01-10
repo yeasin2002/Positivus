@@ -17,7 +17,7 @@ export const ContactForm = ({ ...props }: Props) => {
     <form
       {...props}
       onSubmit={handleSubmit(onSubmit)}
-      className=" w-full md:w-1/2 mt-10 space-y-6"
+      className=" w-full lg:w-1/2 mt-10 space-y-6"
     >
       <div>
         <Label htmlFor="name">Name</Label>

@@ -20,8 +20,8 @@ export const Nav = ({ className, ...props }: Props) => {
       <Link to="/">
         <Logo className="w-36 md:w-52" />
       </Link>
-      <LargeDeviceNav className="hidden md:flex" />
-      <MobileNav className="md:hidden" />
+      <LargeDeviceNav className="hidden lg:flex" />
+      <MobileNav className="lg:hidden" />
     </nav>
   );
 };

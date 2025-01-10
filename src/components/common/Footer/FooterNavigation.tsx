@@ -10,7 +10,7 @@ interface Props extends React.ComponentProps<"div"> {}
 export const FooterNavigation = ({ ...props }: Props) => {
   return (
     <div
-      className="flex items-center justify-between  flex-col gap-y-2 md:flex-row py-4"
+      className="flex items-center justify-between  flex-col gap-y-2 lg:flex-row py-4"
       {...props}
     >
       <Logo className="w-32 md:w-40" />

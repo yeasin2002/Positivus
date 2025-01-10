@@ -41,7 +41,7 @@ export const Testimonials = ({ ...props }: Props) => {
           ))}
         </Swiper>
 
-        <div className="flex items-center justify-evenly mt-20 ">
+        <div className="flex items-center justify-evenly mt-20 md:mt-8 ">
           <ArrowLeft className="text-white" />
           <div className="flex items-center gap-x-4">
             <Star className="text-main-green" />
