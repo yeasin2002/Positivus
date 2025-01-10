@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "@tanstack/react-router";
 
 import Logo from "@/assets/common/logo-white.svg?react";
-import FacebookIcon from "@/assets/icons/fb-bgwhite.svg?react";
-import LinkedinIcon from "@/assets/icons/linkedin-bgwhite.svg?react";
-import TwitterIcon from "@/assets/icons/x-bgwhite.svg?react";
 import { navigationData } from "@/data";
+import { contactLinksData } from "@/data/contactLinks.data";
 
 interface Props extends React.ComponentProps<"div"> {}
 
@@ -25,9 +23,11 @@ export const FooterNavigation = ({ ...props }: Props) => {
       </div>
 
       <div className="flex items-center gap-x-2">
-        <FacebookIcon />
-        <LinkedinIcon />
-        <TwitterIcon />
+        {contactLinksData.map((item) => (
+          <Link to={item.url} key={item.name}>
+            <item.Element />
+          </Link>
+        ))}
       </div>
     </div>
   );
