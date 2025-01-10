@@ -1,3 +1,6 @@
+import { createFileRoute } from "@tanstack/react-router";
+
+import { Footer } from "@/components/common";
 import {
   CaseStudies,
   ClientList,
@@ -8,7 +11,6 @@ import {
   Testimonials,
   WorkingProcess,
 } from "@/pages/landing-page";
-import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: HomeComponent,
@@ -25,6 +27,7 @@ function HomeComponent() {
       <Team />
       <Testimonials />
       <ContactUs />
+      <Footer />
     </div>
   );
 }

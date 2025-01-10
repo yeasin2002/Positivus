@@ -2,7 +2,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import { Button, Input, Label, Textarea } from "@/components/ui";
-
 import { contactFormSchema, ContactSchemaType } from "./contactSchema";
 
 interface Props extends React.ComponentProps<"form"> {}
@@ -48,10 +47,7 @@ export const ContactForm = ({ ...props }: Props) => {
         />
       </div>
 
-      <Button
-        type="submit"
-        className="w-full  py-6 rounded-xl"
-      >
+      <Button type="submit" className="w-full  py-6 rounded-xl">
         Send Message
       </Button>
     </form>

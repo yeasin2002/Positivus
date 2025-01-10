@@ -1,4 +1,4 @@
-export const navData = [
+export const navigationData = [
   {
     label: "About Us",
     link: "about-us",
