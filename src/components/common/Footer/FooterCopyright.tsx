@@ -11,7 +11,6 @@ export const FooterCopyright = ({ ...props }: Props) => {
         <p className="text-center text-sm md:text-base">
           © {fulllYear} Positivus. All Rights Reserved.
         </p>
-        ` `
         <Link to="/" className="underline">
           Privacy Policy
         </Link>

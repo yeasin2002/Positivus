@@ -12,7 +12,7 @@ export const TeamCard = ({ data, ...props }: Props) => {
       className="border border-main-black/70 border-b-4 border-b-main-black px-4 md:px-8 py-4 rounded-3xl"
     >
       <div id="user-data" className="flex items-center gap-2">
-        <data.image />
+        <img src={data.image} />
         <div className="flex flex-col justify-between flex-1">
           <a href={data.linkedinUrl} className="self-end">
             <LinkedinIcon />

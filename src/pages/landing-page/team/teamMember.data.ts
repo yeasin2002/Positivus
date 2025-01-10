@@ -1,9 +1,9 @@
-import User1 from "@/assets/users/user1.svg?react";
-import User2 from "@/assets/users/user2.svg?react";
-import User3 from "@/assets/users/user3.svg?react";
-import User4 from "@/assets/users/user4.svg?react";
-import User5 from "@/assets/users/user5.svg?react";
-import User6 from "@/assets/users/user6.svg?react";
+import User1 from "@/assets/users/user1.png";
+import User2 from "@/assets/users/user2.png";
+import User3 from "@/assets/users/user3.png";
+import User4 from "@/assets/users/user4.png";
+import User5 from "@/assets/users/user5.png";
+import User6 from "@/assets/users/user6.png";
 
 export const teamMemberData = [
   {
