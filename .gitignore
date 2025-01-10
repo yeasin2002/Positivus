@@ -35,4 +35,3 @@ package-lock.json
 dev-dist
 dev-dist/*
 
-src/routeTree.gen.ts
