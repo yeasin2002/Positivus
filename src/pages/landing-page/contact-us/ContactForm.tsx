@@ -2,6 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import { Button, Input, Label, Textarea } from "@/components/ui";
+
 import { contactFormSchema, ContactSchemaType } from "./contactSchema";
 
 interface Props extends React.ComponentProps<"form"> {}
@@ -17,8 +18,7 @@ export const ContactForm = ({ ...props }: Props) => {
     <form
       {...props}
       onSubmit={handleSubmit(onSubmit)}
-      className="w-1/2 mt-10 space-y-4
-    "
+      className=" w-full md:w-1/2 mt-10 space-y-6"
     >
       <div>
         <Label htmlFor="name">Name</Label>
@@ -43,15 +43,14 @@ export const ContactForm = ({ ...props }: Props) => {
         <Label htmlFor="message">Name</Label>
         <Textarea
           placeholder="Message"
-          className="rounded-xl border  border-main-black px-4 py-2"
+          className="rounded-xl border  border-main-black px-4 py-2 min-h-32"
           {...register("message")}
         />
       </div>
 
       <Button
         type="submit"
-        className="w-full
-       "
+        className="w-full  py-6 rounded-xl"
       >
         Send Message
       </Button>

@@ -29,7 +29,7 @@ export const ContactUs = ({ ...props }: Props) => {
           </RadioGroup>
 
           <ContactForm />
-          <HalfRing className="absolute right-0 top-0 w-96  translate-x-44 " />
+          <HalfRing className="absolute right-0 top-[5%] w-[50%]  translate-x-60 hidden md:block" />
         </div>
       </div>
     </div>

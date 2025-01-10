@@ -1,5 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
-
 import {
   CaseStudies,
   ClientList,
@@ -10,6 +8,7 @@ import {
   Testimonials,
   WorkingProcess,
 } from "@/pages/landing-page";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: HomeComponent,
@@ -17,7 +16,7 @@ export const Route = createFileRoute("/")({
 
 function HomeComponent() {
   return (
-    <div className="font-space_grotesk">
+    <div className="font-space_grotesk font-normal">
       <Hero />
       <ClientList />
       <Service />
