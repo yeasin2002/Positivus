@@ -1,9 +1,7 @@
 import HalfRing from "@/assets/Illustration/halh-ring-with-starts.svg?react";
-
+import { SectionsHeader } from "@/components/common";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { SectionsHeader } from "@/components/common";
-
 import { ContactForm } from "./ContactForm";
 
 interface Props extends React.ComponentProps<"div"> {}

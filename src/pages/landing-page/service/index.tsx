@@ -1,7 +1,6 @@
 import React from "react";
 
 import { SectionsHeader } from "@/components/common";
-
 import { ProposalBanner } from "./ProposalBanner";
 import { ServiceCard } from "./ServiceCard";
 import { serviceList } from "./serviceList.data";

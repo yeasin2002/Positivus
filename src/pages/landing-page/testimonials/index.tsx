@@ -1,12 +1,12 @@
-import Star from "@/assets/icons/star.svg?react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import Star from "@/assets/icons/star.svg?react";
 
 import "swiper/css";
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { SectionsHeader } from "@/components/common";
-
 import { ReviewCards } from "./ReviewCards";
 import { TestimonialsReviewData } from "./testimonialsReview.data";
 

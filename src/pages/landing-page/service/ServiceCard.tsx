@@ -1,8 +1,8 @@
 import React from "react";
-import { cn } from "@/utils";
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 
+import { cn } from "@/utils";
 import { serviceList } from "./serviceList.data";
 
 interface Props extends React.ComponentProps<"div"> {

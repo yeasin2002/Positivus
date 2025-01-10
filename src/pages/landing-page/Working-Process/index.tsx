@@ -1,11 +1,10 @@
+import { SectionsHeader } from "@/components/common";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { SectionsHeader } from "@/components/common";
-
 import { WorkingProcessData } from "./WorkingProcess.data";
 
 interface Props extends React.ComponentProps<"div"> {}

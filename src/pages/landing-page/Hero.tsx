@@ -1,5 +1,4 @@
 import HeroImg from "@/assets/Illustration/Illustration.svg?react";
-
 import { Button } from "@/components/ui";
 
 interface Props extends React.ComponentProps<"main"> {}

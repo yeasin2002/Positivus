@@ -1,7 +1,5 @@
 import { Button } from "@/components";
-
 import { SectionsHeader } from "@/components/common";
-
 import { TeamCard } from "./TeamCard";
 import { teamMemberData } from "./teamMember.data";
 

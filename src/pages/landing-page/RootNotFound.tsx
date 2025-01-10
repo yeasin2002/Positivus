@@ -1,5 +1,6 @@
-import NotFondImage from "@/assets/Illustration/_404.svg?react";
 import { ArrowLeft } from "lucide-react";
+
+import NotFondImage from "@/assets/Illustration/_404.svg?react";
 
 export const RootNotFound = () => {
   return (

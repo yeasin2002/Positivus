@@ -1,5 +1,4 @@
 import LinkedinIcon from "@/assets/icons/linkedin.svg?react";
-
 import { teamMemberData } from "./teamMember.data";
 
 interface Props extends React.ComponentProps<"div"> {

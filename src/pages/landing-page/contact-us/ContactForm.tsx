@@ -2,7 +2,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import { Button, Input, Label, Textarea } from "@/components/ui";
-
 import { contactFormSchema, ContactSchemaType } from "./contactSchema";
 
 interface Props extends React.ComponentProps<"form"> {}
@@ -44,7 +43,7 @@ export const ContactForm = ({ ...props }: Props) => {
         <Label htmlFor="message">Name</Label>
         <Textarea
           placeholder="Message"
-          className="rounded-xl border  border-main-black"
+          className="rounded-xl border  border-main-black px-4 py-2"
           {...register("message")}
         />
       </div>

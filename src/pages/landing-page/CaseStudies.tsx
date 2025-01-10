@@ -1,8 +1,8 @@
-import { cn } from "@/utils";
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 
 import { SectionsHeader } from "@/components/common";
+import { cn } from "@/utils";
 
 interface Props extends React.ComponentProps<"div"> {}
 

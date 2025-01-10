@@ -1,11 +1,10 @@
 import React from "react";
-import { cn } from "@/utils";
 import { Link } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui";
-
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { cn } from "@/utils";
 import { navData } from "./nav.data";
 
 interface Props extends React.ComponentProps<"div"> {}

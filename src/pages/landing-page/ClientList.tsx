@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Marquee } from "@/components/ui";
-
 import { clientListData } from "./clientList.data";
 
 interface Props extends React.ComponentProps<"div"> {}
