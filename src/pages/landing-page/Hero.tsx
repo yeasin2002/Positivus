@@ -10,7 +10,7 @@ export const Hero = ({ ...rest }: Props) => {
       {...rest}
     >
       <div>
-        <h1 className="text-3xl font-medium md:text-6xl lea leading-tight ">
+        <h1 className="text-3xl font-medium xl:text-6xl lg:text-4xl  lea leading-tight ">
           Navigating the <br className="hidden md:block" /> digital landscape
           <br className="hidden md:block" /> for success
         </h1>

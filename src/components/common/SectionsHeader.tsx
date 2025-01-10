@@ -21,7 +21,7 @@ export const SectionsHeader = ({
       )}
       {...props}
     >
-      <h3 className="rounded-lg bg-main-green px-2 text-3xl text-nowrap md:text-4xl font-bold text-main-black  w-min md:w-max ">
+      <h3 className="rounded-lg bg-main-green px-2 text-3xl text-nowrap md:text-4xl lg:text-3xl font-bold text-main-black  w-min md:w-max ">
         {heading}
       </h3>
       <p className="text-sm ">

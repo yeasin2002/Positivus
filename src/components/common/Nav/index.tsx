@@ -18,7 +18,7 @@ export const Nav = ({ className, ...props }: Props) => {
       )}
     >
       <Link to="/">
-        <Logo className="w-36 md:w-52" />
+        <Logo className="w-36 md:w-52 lg:w-44" />
       </Link>
       <LargeDeviceNav className="hidden lg:flex" />
       <MobileNav className="lg:hidden" />

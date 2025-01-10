@@ -11,12 +11,12 @@ export const LargeDeviceNav = ({ className, ...props }: Props) => {
   return (
     <div
       id="large-device-nav"
-      className={cn("items-center gap-x-12", className)}
+      className={cn("items-center gap-x-12 lg:gap-x-2", className)}
       {...props}
     >
-      <div className="space-x-6">
+      <div className="xl:space-x-6  lg:flex-1  lg:space-x-4">
         {navigationData?.map(({ label, link }) => (
-          <Link to={link} key={label} className=" text-lg">
+          <Link to={link} key={label} className=" text-lg lg:text-base ">
             {label}
           </Link>
         ))}
