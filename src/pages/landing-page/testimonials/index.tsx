@@ -21,7 +21,7 @@ export const Testimonials = ({ ...props }: Props) => {
         description2="to Learn More about Our Digital Marketing Services"
       />
 
-      <div className="bg-main-black  rounded-3xl py-10 my-10">
+      <div className="bg-main-black  rounded-3xl py-10 my-10 px-2">
         <Swiper
           className="mySwiper"
           slidesPerView={1}
@@ -41,9 +41,9 @@ export const Testimonials = ({ ...props }: Props) => {
           ))}
         </Swiper>
 
-        <div className="flex items-center justify-center mt-20">
+        <div className="flex items-center justify-evenly mt-20 ">
           <ArrowLeft className="text-white" />
-          <div className="flex items-center mx-32 gap-x-4">
+          <div className="flex items-center gap-x-4">
             <Star className="text-main-green" />
             <Star />
             <Star />

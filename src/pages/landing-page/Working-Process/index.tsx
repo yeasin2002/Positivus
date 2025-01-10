@@ -27,9 +27,9 @@ export const WorkingProcess = ({ ...props }: Props) => {
               className="my-4"
             >
               <AccordionTrigger>
-                <span className="flex items-center gap-x-4">
-                  <span className="text-4xl"> {index + 1} </span>
-                  <span className="text-lg">{data.header}</span>
+                <span className="flex items-center  gap-x-4">
+                  <span className="  text-4xl"> {index + 1} </span>
+                  <span className=" text-sm   lg:text-lg ">{data.header}</span>
                 </span>
               </AccordionTrigger>
               <AccordionContent>{data.details}</AccordionContent>

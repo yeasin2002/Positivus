@@ -29,12 +29,12 @@ export const ServiceCard = ({ service, className, ...props }: Props) => {
       )}
     >
       <div className="flex flex-col justify-between">
-        <h6 className={cn("text-xl font-semibold")}>
-          <span className={cn("p-2 rounded-xl", headingStyle)}>
+        <h6 className={cn("md:text-xl text-base font-semibold text-nowrap")}>
+          <span className={cn("md:p-2 p-1 rounded-xl", headingStyle)}>
             {service.heading1}
           </span>
           <br />
-          <span className={cn("p-2 rounded-xl", headingStyle)}>
+          <span className={cn("md:p-2 p-1 rounded-xl", headingStyle)}>
             {service.heading2}
           </span>
         </h6>

@@ -16,7 +16,7 @@ export const ContactUs = ({ ...props }: Props) => {
       />
 
       <div className="relative bg-main-gray min-h-60  rounded-3xl  my-4 overflow-hidden">
-        <div className="p-10">
+        <div className=" py-8 px-6   lg:p-10">
           <RadioGroup defaultValue="option-one" className="flex gap-x-5">
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="option-one" id="option-one" />

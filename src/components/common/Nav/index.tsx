@@ -12,10 +12,13 @@ export const Nav = ({ className, ...props }: Props) => {
   return (
     <nav
       {...props}
-      className={cn("flex items-center justify-between py-10", className)}
+      className={cn(
+        "flex items-center justify-between py-10 container",
+        className
+      )}
     >
       <Link to="/">
-        <Logo className="w-44 md:w-52" />
+        <Logo className="w-36 md:w-52" />
       </Link>
       <LargeDeviceNav className="hidden md:flex" />
       <MobileNav className="md:hidden" />

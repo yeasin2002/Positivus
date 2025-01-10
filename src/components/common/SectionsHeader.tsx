@@ -16,12 +16,14 @@ export const SectionsHeader = ({
   return (
     <div
       className={cn(
-        " flex   md:items-center gap-x-10 flex-col md:flex-row gap-y-4 my-10",
+        " flex   justify-center items-center text-center md:justify-start md:items-start md:text-start gap-x-10 flex-col md:flex-row gap-y-4 my-10",
         className
       )}
       {...props}
     >
-      <h3 className="section-header"> {heading} </h3>
+      <h3 className="rounded-lg bg-main-green px-2 text-3xl text-nowrap md:text-4xl font-bold text-main-black  w-min md:w-max ">
+        {heading}
+      </h3>
       <p className="text-sm ">
         {description1}
         <br />
