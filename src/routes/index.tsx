@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 
 function HomeComponent() {
   return (
-    <div className="font-space_grotesk font-normal *:container">
+    <div className="*:container">
       <Hero />
       <ClientList />
       <Service />

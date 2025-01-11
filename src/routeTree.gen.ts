@@ -8,20 +8,10 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { createFileRoute } from "@tanstack/react-router";
-
 // Import Routes
 
 import { Route as rootRoute } from "./routes/__root";
 import { Route as IndexImport } from "./routes/index";
-
-// Create Virtual Routes
-
-const UseCasesIndexLazyImport = createFileRoute("/use-cases/")();
-const ServiceIndexLazyImport = createFileRoute("/service/")();
-const PricingIndexLazyImport = createFileRoute("/pricing/")();
-const BlogIndexLazyImport = createFileRoute("/blog/")();
-const AboutUsIndexLazyImport = createFileRoute("/about-us/")();
 
 // Create/Update Routes
 
@@ -30,44 +20,6 @@ const IndexRoute = IndexImport.update({
   path: "/",
   getParentRoute: () => rootRoute,
 } as any);
-
-const UseCasesIndexLazyRoute = UseCasesIndexLazyImport.update({
-  id: "/use-cases/",
-  path: "/use-cases/",
-  getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import("./routes/use-cases/index.lazy").then((d) => d.Route)
-);
-
-const ServiceIndexLazyRoute = ServiceIndexLazyImport.update({
-  id: "/service/",
-  path: "/service/",
-  getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import("./routes/service/index.lazy").then((d) => d.Route)
-);
-
-const PricingIndexLazyRoute = PricingIndexLazyImport.update({
-  id: "/pricing/",
-  path: "/pricing/",
-  getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import("./routes/pricing/index.lazy").then((d) => d.Route)
-);
-
-const BlogIndexLazyRoute = BlogIndexLazyImport.update({
-  id: "/blog/",
-  path: "/blog/",
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import("./routes/blog/index.lazy").then((d) => d.Route));
-
-const AboutUsIndexLazyRoute = AboutUsIndexLazyImport.update({
-  id: "/about-us/",
-  path: "/about-us/",
-  getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import("./routes/about-us/index.lazy").then((d) => d.Route)
-);
 
 // Populate the FileRoutesByPath interface
 
@@ -80,41 +32,6 @@ declare module "@tanstack/react-router" {
       preLoaderRoute: typeof IndexImport;
       parentRoute: typeof rootRoute;
     };
-    "/about-us/": {
-      id: "/about-us/";
-      path: "/about-us";
-      fullPath: "/about-us";
-      preLoaderRoute: typeof AboutUsIndexLazyImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/blog/": {
-      id: "/blog/";
-      path: "/blog";
-      fullPath: "/blog";
-      preLoaderRoute: typeof BlogIndexLazyImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/pricing/": {
-      id: "/pricing/";
-      path: "/pricing";
-      fullPath: "/pricing";
-      preLoaderRoute: typeof PricingIndexLazyImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/service/": {
-      id: "/service/";
-      path: "/service";
-      fullPath: "/service";
-      preLoaderRoute: typeof ServiceIndexLazyImport;
-      parentRoute: typeof rootRoute;
-    };
-    "/use-cases/": {
-      id: "/use-cases/";
-      path: "/use-cases";
-      fullPath: "/use-cases";
-      preLoaderRoute: typeof UseCasesIndexLazyImport;
-      parentRoute: typeof rootRoute;
-    };
   }
 }
 
@@ -122,70 +39,32 @@ declare module "@tanstack/react-router" {
 
 export interface FileRoutesByFullPath {
   "/": typeof IndexRoute;
-  "/about-us": typeof AboutUsIndexLazyRoute;
-  "/blog": typeof BlogIndexLazyRoute;
-  "/pricing": typeof PricingIndexLazyRoute;
-  "/service": typeof ServiceIndexLazyRoute;
-  "/use-cases": typeof UseCasesIndexLazyRoute;
 }
 
 export interface FileRoutesByTo {
   "/": typeof IndexRoute;
-  "/about-us": typeof AboutUsIndexLazyRoute;
-  "/blog": typeof BlogIndexLazyRoute;
-  "/pricing": typeof PricingIndexLazyRoute;
-  "/service": typeof ServiceIndexLazyRoute;
-  "/use-cases": typeof UseCasesIndexLazyRoute;
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute;
   "/": typeof IndexRoute;
-  "/about-us/": typeof AboutUsIndexLazyRoute;
-  "/blog/": typeof BlogIndexLazyRoute;
-  "/pricing/": typeof PricingIndexLazyRoute;
-  "/service/": typeof ServiceIndexLazyRoute;
-  "/use-cases/": typeof UseCasesIndexLazyRoute;
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath;
-  fullPaths:
-    | "/"
-    | "/about-us"
-    | "/blog"
-    | "/pricing"
-    | "/service"
-    | "/use-cases";
+  fullPaths: "/";
   fileRoutesByTo: FileRoutesByTo;
-  to: "/" | "/about-us" | "/blog" | "/pricing" | "/service" | "/use-cases";
-  id:
-    | "__root__"
-    | "/"
-    | "/about-us/"
-    | "/blog/"
-    | "/pricing/"
-    | "/service/"
-    | "/use-cases/";
+  to: "/";
+  id: "__root__" | "/";
   fileRoutesById: FileRoutesById;
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute;
-  AboutUsIndexLazyRoute: typeof AboutUsIndexLazyRoute;
-  BlogIndexLazyRoute: typeof BlogIndexLazyRoute;
-  PricingIndexLazyRoute: typeof PricingIndexLazyRoute;
-  ServiceIndexLazyRoute: typeof ServiceIndexLazyRoute;
-  UseCasesIndexLazyRoute: typeof UseCasesIndexLazyRoute;
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutUsIndexLazyRoute: AboutUsIndexLazyRoute,
-  BlogIndexLazyRoute: BlogIndexLazyRoute,
-  PricingIndexLazyRoute: PricingIndexLazyRoute,
-  ServiceIndexLazyRoute: ServiceIndexLazyRoute,
-  UseCasesIndexLazyRoute: UseCasesIndexLazyRoute,
 };
 
 export const routeTree = rootRoute
@@ -198,31 +77,11 @@ export const routeTree = rootRoute
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/",
-        "/about-us/",
-        "/blog/",
-        "/pricing/",
-        "/service/",
-        "/use-cases/"
+        "/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
-    },
-    "/about-us/": {
-      "filePath": "about-us/index.lazy.tsx"
-    },
-    "/blog/": {
-      "filePath": "blog/index.lazy.tsx"
-    },
-    "/pricing/": {
-      "filePath": "pricing/index.lazy.tsx"
-    },
-    "/service/": {
-      "filePath": "service/index.lazy.tsx"
-    },
-    "/use-cases/": {
-      "filePath": "use-cases/index.lazy.tsx"
     }
   }
 }

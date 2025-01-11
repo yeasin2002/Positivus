@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "@tanstack/react-router";
 
 import { Button } from "@/components/ui";
+import { navigationData } from "@/data";
 import { cn } from "@/utils";
-import { navigationData } from "../../../data/navigation.data";
 
 interface Props extends React.ComponentProps<"div"> {}
 
@@ -14,9 +14,14 @@ export const LargeDeviceNav = ({ className, ...props }: Props) => {
       className={cn("items-center gap-x-12 lg:gap-x-2", className)}
       {...props}
     >
-      <div className="xl:space-x-6  lg:flex-1  lg:space-x-4">
-        {navigationData?.map(({ label, link }) => (
-          <Link to={link} key={label} className=" text-lg lg:text-base ">
+      <div className="xl:space-x-6  lg:flex-1 ">
+        {navigationData?.map(({ label }) => (
+          <Link
+            to={"/"}
+            key={label}
+            className=" text-lg lg:text-base  rounded-md"
+            // activeProps={{ className: "bg-main-green" }}
+          >
             {label}
           </Link>
         ))}

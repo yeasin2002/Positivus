@@ -8,7 +8,7 @@ export const Footer = ({ ...props }: Props) => {
   return (
     <div
       {...props}
-      className="rounded-t-3xl bg-main-black mt-10 text-main-gray pt-4 px-2 md:p-8"
+      className="rounded-t-3xl bg-main-black mt-10 text-main-gray pt-4 px-2 md:p-8 "
     >
       <FooterNavigation />
       <FooterContact />

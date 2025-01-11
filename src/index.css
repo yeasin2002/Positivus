@@ -72,13 +72,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-main-black;
+    @apply bg-background font-space_grotesk font-normal text-main-black;
   }
-}
-
-@layer components {
-  /* #root {
-    @apply container;
-  } */
-  
 }
